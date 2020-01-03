@@ -11,7 +11,9 @@ def load_library(file)
     # binding.pry
     if !result[:get_meaning].has_key?(jap)
       result[:get_meaning][jap] = {}
-    # if !result[:get_meaning].include?(jap)
+    end
+    if !result[:get_meaning][jap].has_key(m)
+      result[:get_meaning][jap][m]
     end
   }
   return result
