@@ -15,6 +15,12 @@ def load_library(file)
     if !result[:get_meaning][jap].has_key?(m)
       result[:get_meaning][jap] = m
     end
+    if !result[:get_emoticon].has_key?(eng)
+      result[:get_emoticon][eng] = {}
+    end
+    if !result[:get_emoticon][eng].has_key?(m)
+      result[:get_emoticon][eng] = m
+    end
   }
   return result
 end
