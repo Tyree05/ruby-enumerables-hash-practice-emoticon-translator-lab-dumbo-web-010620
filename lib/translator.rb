@@ -26,7 +26,7 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(emo, meaning)
-
+   load_library(emoticons.yml)
 end
 
 def get_english_meaning
