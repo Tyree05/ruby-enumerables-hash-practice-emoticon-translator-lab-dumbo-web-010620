@@ -10,7 +10,7 @@ def load_library(file)
   direct_file.map { |m, (eng, jap)|
     # binding.pry
     if !result[:get_meaning].has_key?(jap)
-      result[:get_meaning] = [jap]
+      result[:get_meaning][jap] = {}
     # if !result[:get_meaning].include?(jap)
     end
   }
