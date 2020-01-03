@@ -28,12 +28,13 @@ end
 
 def get_japanese_emoticon(file, emoji)
    jap_directory = load_library(file)
+   eng_emo = 0
    jap_directory[:get_emoticon].each { |(e,j)|
      if j === emoji
-       return e
+       eng_emo = e
      end
    }
-
+ return eng_emo
 end
 
 def get_english_meaning
