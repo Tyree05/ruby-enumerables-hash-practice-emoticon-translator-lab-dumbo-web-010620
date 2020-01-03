@@ -31,7 +31,7 @@ def get_japanese_emoticon(file, emoji)
   #  eng_emo = 0
    jap_directory[:get_emoticon].each { |(e,j)|
      if jap_directory[:get_emoticon].has_key?(emoji)
-       return j
+       value = j
      end
     #  binding.pry
    }
