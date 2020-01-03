@@ -39,7 +39,7 @@ def get_english_meaning(file, emoji)
   eng_directory = load_library(file)
   emo_mean = "Sorry, that meaning was not found"
   if eng_directory[:get_meaning].has_key?(emoji)
-    emo_mean = jap_directory[:get_emoticon][emoji]
+    emo_mean = eng_directory[:get_emoticon][emoji]
   end
   return emo_mean
 end
