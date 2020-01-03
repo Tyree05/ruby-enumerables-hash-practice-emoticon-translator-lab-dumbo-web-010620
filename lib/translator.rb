@@ -18,8 +18,8 @@ def load_library(file)
     if !result[:get_emoticon].has_key?(eng)
       result[:get_emoticon][eng] = {}
     end
-    if !result[:get_emoticon][eng].has_key?(m)
-      result[:get_emoticon][eng] = m
+    if !result[:get_emoticon][eng].has_key?(jap)
+      result[:get_emoticon][eng] = jap
     end
   }
   return result
