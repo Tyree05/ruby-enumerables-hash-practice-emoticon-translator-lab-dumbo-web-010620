@@ -10,7 +10,7 @@ def load_library(file)
   direct_file.each { |m, (eng, jap)|
     # binding.pry
     # if !result[:get_meaning].has_key?(m)
-      result[:get_meaning] = [times.jap(13)]
+      result[:get_meaning] = [jap, jap]
     # if !result[:get_meaning].include?(jap)
     # end
   }
