@@ -40,7 +40,7 @@ def get_english_meaning(file, emoji)
   emo_mean = "Sorry, that meaning was not found"
     if eng_directory[:get_meaning].has_key?(emoji)
       emo_mean = eng_directory[:get_meaning][emoji]
-      binding.pry
+      # binding.pry
     end
   return emo_mean
 end
