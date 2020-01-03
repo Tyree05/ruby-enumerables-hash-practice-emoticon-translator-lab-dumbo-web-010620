@@ -29,8 +29,8 @@ end
 def get_japanese_emoticon(file, emoji)
    jap_directory = load_library(file)
    jap_emo = "Sorry, that emoticon was not found"
-     if jap_directory[:get_emoticon].has_key?(emoji)
-       jap_emo = jap_directory[:get_emoticon][emoji]
+     if jap_directory[:get_meaning].has_key?(emoji)
+       jap_emo = jap_directory[:get_meaning][emoji]
      end
  return jap_emo
 end
