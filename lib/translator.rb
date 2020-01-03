@@ -29,15 +29,17 @@ end
 def get_japanese_emoticon(file, emoji)
    jap_directory = load_library(file)
    jap_emo = "Sorry, that emoticon was not found"
-  #  jap_directory[:get_emoticon].each { |(e,j)|
      if jap_directory[:get_emoticon].has_key?(emoji)
        jap_emo = jap_directory[:get_emoticon][emoji]
      end
-    #  binding.pry
-  #  }
  return jap_emo
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file, emoji)
+  eng_directory = load_library(file)
+  emo_mean = "Sorry, that meaning was not found"
+  if jap_directory[:get_meaning].has_key?(emoji)
+    emo_mean = jap_directory[:get_emoticon][emoji]
+  end
+  return emo_mean
 end
