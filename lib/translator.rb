@@ -31,11 +31,11 @@ def get_japanese_emoticon(file, emoji)
   #  eng_emo = 0
    jap_directory[:get_emoticon].each { |(e,j)|
      if jap_directory[:get_emoticon].has_key?(emoji)
-       value = j
+       jap_emo = j
      end
     #  binding.pry
    }
- return value
+ return jap_emo
 end
 
 def get_english_meaning
