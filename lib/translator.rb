@@ -29,11 +29,11 @@ end
 def get_japanese_emoticon(file, emoji)
    jap_directory = load_library(file)
    eng_emo = 0
-   jap_directory[:get_emoticon].each { |h, (e,j)|
-     if j === emoji
+   jap_directory[:get_emoticon].each { |(e,j)|
+     if jap_directory[:get_emoticon].has_key?(emoji)
        eng_emo = e
      end
-     binding.pry
+    #  binding.pry
    }
  return eng_emo
 end
