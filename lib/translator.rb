@@ -8,8 +8,8 @@ def load_library(file)
   result[:get_emoticon] = {}
   result[:get_meaning] = {}
   direct_file.each { |m, (eng, jap)|
-    direct_file[m][jap].each { |j|
-    
+    binding.pry
+
     }
     # if !result[:get_meaning].has_key?(m)
     #   result[:get_meaning] = [jap]
