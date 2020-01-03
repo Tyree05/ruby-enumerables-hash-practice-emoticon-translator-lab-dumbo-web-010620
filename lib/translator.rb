@@ -13,7 +13,7 @@ def load_library(file)
       result[:get_meaning][jap] = {}
     end
     if !result[:get_meaning][jap].has_key(m)
-      result[:get_meaning][jap][m]
+      result[:get_meaning][jap] = m
     end
   }
   return result
