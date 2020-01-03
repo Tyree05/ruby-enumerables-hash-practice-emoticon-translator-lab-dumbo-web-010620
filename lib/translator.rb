@@ -9,8 +9,6 @@ def load_library(file)
   result[:get_meaning] = {}
   direct_file.each { |m, (eng, jap)|
     binding.pry
-
-    }
     # if !result[:get_meaning].has_key?(m)
     #   result[:get_meaning] = [jap]
     # if !result[:get_meaning].include?(jap)
