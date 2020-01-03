@@ -33,6 +33,7 @@ def get_japanese_emoticon(file, emoji)
      if j === emoji
        eng_emo = e
      end
+     binding.pry
    }
  return eng_emo
 end
