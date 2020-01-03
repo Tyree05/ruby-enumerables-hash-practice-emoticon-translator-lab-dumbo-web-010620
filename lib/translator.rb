@@ -22,6 +22,7 @@ def load_library(file)
       result[:get_emoticon][eng] = jap
     end
   }
+  binding.pry
   return result
 end
 
