@@ -28,6 +28,9 @@ end
 
 def get_japanese_emoticon(file, emoji)
    jap_directory = load_library(file)
+   jap_directory[:get_emoticon].each { |(e,j)|
+     binding.pry
+   }
 
 end
 
